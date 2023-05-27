@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GalleryDesign</title>
+    <link rel="stylesheet" href="GalleryDesign.css">
+    <link rel="stylesheet" href="lightbox.css">
+</head>
+<body>
+
+    <div class="toggle-switch">
+		<input type="checkbox" id="toggle" class="toggle-input">
+		<label for="toggle" class="toggle-label">
+		  <span class="toggle-icon toggle-icon-moon"><i class="fas fa-moon"></i></span>
+		  <span class="toggle-icon toggle-icon-sun"><i class="fas fa-sun"></i></span>
+		  <span class="toggle-switch-background"></span>
+		</label>
+	  </div>
+    
+    <div class="container">
+        <div class="gallery">
+            <a href="Wallpapper\[4K] Clean Bugatti Chiron Wallpaper [3840x2160] (Forza Horizon 4).png" data-lightbox="models" data-title="This Bucatti is Yours">
+                <img src="Wallpapper\[4K] Clean Bugatti Chiron Wallpaper [3840x2160] (Forza Horizon 4).png" alt="">
+            </a>
+
+            <a href="Wallpapper\3D Wallpaper Desktop Free Download - PixelsTalk_Net.jfif" data-lightbox="models" data-title="Caption2">
+                <img src="Wallpapper\3D Wallpaper Desktop Free Download - PixelsTalk_Net.jfif" alt="">
+            </a>
+
+            <a href="Wallpapper\anime.png" data-lightbox="models" data-title="Caption3">
+                <img src="Wallpapper\anime.png" alt="">
+            </a>
+
+            <a href="Wallpapper\Crossfire PC Wallpaper 1080p.png" data-lightbox="models" data-title="Caption4">
+                <img src="Wallpapper\Crossfire PC Wallpaper 1080p.png" alt="">
+            </a>
+
+            <a href="Wallpapper\download.jfif" data-lightbox="models" data-title="Caption5">
+                <img src="Wallpapper\download.jfif" alt="">
+            </a>
+
+            <a href="Wallpapper\HD wallpaper_ Anime, Your Name_.png" data-lightbox="models" data-title="Caption6">
+                <img src="Wallpapper\HD wallpaper_ Anime, Your Name_.png" alt="">
+            </a>
+
+            <a href="Wallpapper\HD wallpaper_ camp fire wallpaper, black rocky mountain, pixel art, Moon, The Sin of Man.jfif" data-lightbox="models" data-title="Caption7">
+                <img src="Wallpapper\HD wallpaper_ camp fire wallpaper, black rocky mountain, pixel art, Moon, The Sin of Man.jfif" alt="">
+            </a>
+
+            <a href="Wallpapper\HD wallpaper_ constellation HD wallpaper, abstract, Ae Plexus, cyan, dots, technology.jfif" data-lightbox="models" data-title="Caption8">
+                <img src="Wallpapper\HD wallpaper_ constellation HD wallpaper, abstract, Ae Plexus, cyan, dots, technology.jfif" alt="">
+            </a>
+
+            <a href="Wallpapper\HD wallpaper_ silhouette, Naruto Shippuuden, power lines, ANBU, anime, utility pole.jfif" data-lightbox="models" data-title="Caption9">
+                <img src="Wallpapper\HD wallpaper_ silhouette, Naruto Shippuuden, power lines, ANBU, anime, utility pole.jfif" alt="">
+            </a>
+
+            <a href="Wallpapper\HD wallpaper_ spiderman, 4k, artwork, hd, artist, behance, superheroes, digital art.jfif" data-lightbox="models" data-title="Caption10">
+                <img src="Wallpapper\HD wallpaper_ spiderman, 4k, artwork, hd, artist, behance, superheroes, digital art.jfif" alt="">
+            </a>
+
+            <a href="Wallpapper\HD wallpaper_ Thousand Sunny One Piece, manga, backgrounds, illustration, sky.jfif" data-lightbox="models" data-title="Caption1">
+                <img src="Wallpapper\HD wallpaper_ Thousand Sunny One Piece, manga, backgrounds, illustration, sky.jfif" alt="">
+            </a>
+
+            <a href="Wallpapper\HD wallpaper_ Zelda, The Legend of Zelda_ Breath of the Wild, Link.jfif" data-lightbox="models" data-title="Caption1">
+                <img src="Wallpapper\HD wallpaper_ Zelda, The Legend of Zelda_ Breath of the Wild, Link.jfif" alt="">
+            </a>
+            
+            <a href="Wallpapper\The 12 Best Dark Wallpaper Sites for Dark Desktop Backgrounds.jfif" data-lightbox="models" data-title="Caption1">
+                <img src="Wallpapper\The 12 Best Dark Wallpaper Sites for Dark Desktop Backgrounds.jfif" alt="">
+            </a>
+            
+            <a href="Wallpapper\Windows 11 Black Wallpaper, HD Hi-Tech 4K Wallpapers, Images, Photos and Background - Wallpapers Den.jfif" data-lightbox="models" data-title="Caption1">
+                <img src="Wallpapper\Windows 11 Black Wallpaper, HD Hi-Tech 4K Wallpapers, Images, Photos and Background - Wallpapers Den.jfif" alt="">
+            </a>
+         
+        </div>
+    </div>
+
+
+    <script src="lightbox-plus-jquery.js">
+
+    </script>
+
+<script>
+    const toggleSwitch = document.querySelector('.toggle-input');
+    const body = document.querySelector('body');
+    const icons = document.querySelectorAll('.toggle-icon');
+
+    function switchTheme(event) {
+    if (event.target.checked) {
+        body.classList.add('dark-mode');
+        icons.forEach(icon => icon.classList.add('dark-mode'));
+    } else {
+        body.classList.remove('dark-mode');
+        icons.forEach(icon => icon.classList.remove('dark-mode'));
+    }
+    }
+
+    toggleSwitch.addEventListener('change', switchTheme);
+
+</script>
+
+</body>
+</html>
